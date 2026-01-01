@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Regular.otf') format(opentype);
+}
+
+body {
+    background: url(./assets/rgs.webp) no-repeat top center/cover;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+}
+
+.form-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 10px;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #cecece;
+}
+
+h1 {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 600;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-payment p {
+    width: 100%;
+    height: 60px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.payment {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #0d451548;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.imag {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+#mgc {
+    position: absolute;
+    right: 5%;
+    width: 300px;
+    top: 10%;
+}
+
+#pix {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.mod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+p{
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

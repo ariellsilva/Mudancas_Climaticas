@@ -1,0 +1,163 @@
+:root {
+  --text-color: rgb(100, 100, 100);
+  --other: white;
+  --bg-url: rgb(0, 51, 0);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url-: url(./imagens/moon-stars.svg);
+  }
+  
+.light {
+  --text-color: white;
+  --other: black;
+  --bg-url: lightgreen;
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url-: url(./imagens/sun.svg);
+}
+
+body{
+  background-color: var(--bg-url);
+  padding: 30px;
+  align-items: center;
+  color: var(--other);
+}
+
+section{
+  align-content: center;
+  background-color: var(--text-color);
+  padding: 15px;
+}
+  
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+  margin-bottom: 10px;
+}
+  
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url-) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: slide-back 0.2s;
+}
+  
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+  
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+}
+  
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+  
+/* animation */
+
+@keyframes slide-in{
+  from{
+    left:0;
+  }
+  to {
+    left:50%;
+  }
+}
+
+@keyframes slide-back{
+  from{
+    left:50%;
+  }
+  to {
+    left:0;
+  }
+}
+  
+div.card{
+  text-align: center;
+}
+
+section{
+  text-align: justify;
+}
+
+#carouselExample{
+  height: 400px;
+  width: 600px;
+}
+
+#carro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.carousel-item{
+  height: 400px;
+  width: 600px;
+}
+
+img{
+  height: 400px;
+  width: 600px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--other);
+  font-weight: bold;
+}
+
+h1{
+  font-size: 26px;
+  text-align: center;
+}
+
+h2{
+  font-size: 22px;
+  text-align: center;
+}
+
+div.mae{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+div.modelagem{
+  height: 400px;
+  width: 400px;
+}
+
+img.card-img-top{
+  height: 285px;
+  width: 285px;
+}
+
+div.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
